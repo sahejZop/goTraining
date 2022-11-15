@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+
 	"rsc.io/quote"
 )
 
@@ -15,7 +16,6 @@ func swapStrings(str1 string, str2 string) (string, string) {
 }
 
 func square(n int) int {
-	fmt.Println(quote.Go())
 	return n * n
 }
 
@@ -80,9 +80,27 @@ func printStuff() {
 }
 
 func main() {
-	//printStuff()
 	fmt.Println(quote.Go())
 	//printStuff()
-	deferReturn()
-	fmt.Println(quote.Glass())
+	//deferReturn()
+	//testPointers()
+	//point := CartesianPoint{1, 4}
+	//pointPointer := &point
+	//fmt.Printf("Point is (%d, %d)\n", pointPointer.X, pointPointer.Y)
+
+	//arrayOperations()
+	//sliceOperations()
+	//uuidWithHyphen := uuid.NewRandom()
+	//uuid := strings.Replace(uuidWithHyphen.String(), "-", "", -1)
+	//fmt.Println(uuid)
+	sqrt(9)
+	//uuidWithHyphen := uuid.NewRandom()
+	//uuid := strings.Replace(uuidWithHyphen.String(), "-", "", -1)
+	//fmt.Println(uuid)
+
+	//packageInsidePackage.NestedCall()
+	//println(addition.Add(1, 2))
+	//fmt.Printf("Distance of two cartesian points: %f\n", DistanceOfTwoCartesianPoints(
+	//	structs.CartesianPoint{X: 1, Y: 2}, structs.CartesianPoint{X: -3, Y: 10}))
+	//fmt.Println(quote.Glass())
 }
