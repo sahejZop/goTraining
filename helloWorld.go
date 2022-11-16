@@ -4,7 +4,11 @@ import (
 	"fmt"
 	"math"
 
+	"github.com/sahejZop/goTraining/models/lc"
+
 	"rsc.io/quote"
+
+	"github.com/sahejZop/goTraining/models/constants"
 )
 
 func multiply(x int, y int) int {
@@ -56,10 +60,9 @@ func printStuff() {
 	fmt.Println()
 
 	var firstName string
-	fmt.Println("Enter your first name: ")
+	fmt.Println(constants.NAME_PROMPT)
 	fmt.Scanf("%s", &firstName)
 	fmt.Println("\nHi,", firstName)
-
 	var (
 		a int
 		b int
@@ -79,8 +82,15 @@ func printStuff() {
 	testFun()
 }
 
+func init() {
+
+}
+
 func main() {
+	var a rune = 100 / 9
+	fmt.Printf("%d\n", a)
 	fmt.Println(quote.Go())
+	fmt.Println(lc.InorderTraversal(&lc.TreeNode{Val: 1, Right: &lc.TreeNode{Val: 2, Left: &lc.TreeNode{Val: 3}}}))
 	//printStuff()
 	//deferReturn()
 	//testPointers()
@@ -93,7 +103,6 @@ func main() {
 	//uuidWithHyphen := uuid.NewRandom()
 	//uuid := strings.Replace(uuidWithHyphen.String(), "-", "", -1)
 	//fmt.Println(uuid)
-	sqrt(9)
 	//uuidWithHyphen := uuid.NewRandom()
 	//uuid := strings.Replace(uuidWithHyphen.String(), "-", "", -1)
 	//fmt.Println(uuid)
